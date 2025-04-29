@@ -57,7 +57,9 @@
                     &kp LGUI  &kp LALT  &mo 1   &kp LEFT_SHIFT  &kp RET       &kp BACKSPACE     &kp SPACE  &kp DEL  &mo 2      &new_string
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp PG_DN PG_UP>;
         };
 
         lower_layer {
